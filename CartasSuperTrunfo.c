@@ -9,6 +9,7 @@
 typedef struct {
     char estado;
     char codigo[4];
+    char nome[255];
     int populacao;
     float area;
     float pib;
@@ -30,6 +31,9 @@ int main() {
     printf("Digite o código da carta: ");
     scanf("%3s", carta.codigo);
 
+    printf("Digite o nome da cidade: ");
+    scanf("%255s", carta.nome);
+
     printf("Digite a população: ");
     scanf("%i", &carta.populacao);
 
@@ -45,9 +49,10 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("\n");
     printf("Estado: %c\n", carta.estado);
     printf("Código da Carta: %s\n", carta.codigo);
-    printf("Nome da Cidade: São Paulo\n");
+    printf("Nome da Cidade: %s\n", carta.nome);
     printf("População: %i\n", carta.populacao);
     printf("Área: %.2f km²\n", carta.area);
     printf("PIB: %.2f bilhões de reais\n", carta.pib);
