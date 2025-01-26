@@ -12,8 +12,9 @@ typedef struct {
     float area;
     float pib;
     int numero_pontos_turisticos;
+    float densidade_populacional;
+    float pib_per_capita;
 } Carta;
-
 
 int main() {
     // Declara a carta a ser cadastrada
@@ -42,6 +43,10 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%i", &carta.numero_pontos_turisticos);
 
+    // Propriedades calculadas
+    carta.densidade_populacional = carta.populacao / carta.area;
+    carta.pib_per_capita = carta.pib / carta.populacao;
+
     // Exibição dos Dados das Cartas:
     // Imprime os dados da carta sequencialmente no terminal
     printf("\n");
@@ -52,6 +57,8 @@ int main() {
     printf("Área: %.2f km²\n", carta.area);
     printf("PIB: %.2f bilhões de reais\n", carta.pib);
     printf("Número de Pontos Turísticos: %i\n", carta.numero_pontos_turisticos);
+    printf("Densidade populacional: %.2f individuos por km²\n", carta.densidade_populacional);
+    printf("PIB per capita: %.2f bilhões de reais por pessoa\n", carta.pib_per_capita);
 
     return 0;
 }
