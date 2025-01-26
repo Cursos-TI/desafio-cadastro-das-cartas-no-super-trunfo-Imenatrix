@@ -6,9 +6,20 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+typedef struct {
+    char estado;
+    char codigo[4];
+    int populacao;
+    float area;
+    float pib;
+    int numeroDePontosTuristicos;
+} Carta;
+
+
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    Carta carta;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
