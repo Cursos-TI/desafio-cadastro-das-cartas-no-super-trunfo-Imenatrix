@@ -2,10 +2,8 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
+// Struct que define uma carta do Super Trunfo com o tema Cidades
 typedef struct {
     char estado;
     char codigo[4];
@@ -18,13 +16,11 @@ typedef struct {
 
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    // Declara a carta a ser cadastrada
     Carta carta;
     
     // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    // Insere os dados da carta sequencialmente via terminal
     printf("Digite o estado: ");
     scanf("%c", &carta.estado);
 
@@ -47,8 +43,7 @@ int main() {
     scanf("%i", &carta.numero_pontos_turisticos);
 
     // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Imprime os dados da carta sequencialmente no terminal
     printf("\n");
     printf("Estado: %c\n", carta.estado);
     printf("Código da Carta: %s\n", carta.codigo);
