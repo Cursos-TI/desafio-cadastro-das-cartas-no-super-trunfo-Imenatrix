@@ -27,19 +27,19 @@ int main() {
     printf("Digite o estado: ");
     scanf("%c", &carta.estado);
 
-    printf("Digite o código da cidade: ");
+    printf("Digite o código da carta: ");
     scanf("%3s", carta.codigo);
 
-    printf("Digite a população da cidade: ");
+    printf("Digite a população: ");
     scanf("%i", &carta.populacao);
 
-    printf("Digite a área da cidade: ");
+    printf("Digite a área: ");
     scanf("%f", &carta.area);
 
     printf("Digite o PIB: ");
     scanf("%f", &carta.pib);
 
-    printf("Digite a quantidade de pontos turísticos: ");
+    printf("Digite o número de pontos turísticos: ");
     scanf("%i", &carta.numero_pontos_turisticos);
 
     // Exibição dos Dados das Cartas:
