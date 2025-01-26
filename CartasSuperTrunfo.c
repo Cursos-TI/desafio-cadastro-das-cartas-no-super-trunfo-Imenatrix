@@ -12,7 +12,7 @@ typedef struct {
     int populacao;
     float area;
     float pib;
-    int numeroDePontosTuristicos;
+    int numero_pontos_turisticos;
 } Carta;
 
 
@@ -40,7 +40,7 @@ int main() {
     scanf("%f", &carta.pib);
 
     printf("Digite a quantidade de pontos turísticos: ");
-    scanf("%i", &carta.numeroDePontosTuristicos);
+    scanf("%i", &carta.numero_pontos_turisticos);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
